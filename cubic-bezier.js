@@ -25,7 +25,7 @@
 
 var self = window.CubicBezier = function(coordinates) {
 	if (typeof coordinates === 'string') {
-		if(coordinates.indexOf('#') === 0) {
+		if(coordinates[0] === '#') {
 			coordinates = coordinates.slice(1);
 		}
 		
